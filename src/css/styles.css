@@ -6,6 +6,7 @@
 
 :root {
   --hero-background: #ffe9e8;
+  --icon-background: #ffd5d3;
 
   --brand-color: #cd3c32;
 
@@ -144,10 +145,10 @@ body {
 /*****************/
 
 .section-main {
-  padding: 8rem 0;
+  padding: 8rem 0 0 0;
 }
 
-.timing-section {
+.timing {
   width: 121.6rem;
   height: 74.5rem;
 
@@ -181,8 +182,6 @@ body {
   text-align: center;
 }
 
-/*  */
-
 .counter {
   font-size: 6.4rem;
   font-weight: 600;
@@ -197,7 +196,111 @@ body {
 }
 
 .timing-img {
-  margin-bottom: 8rem;
+  border-bottom: 8rem;
 }
 
-/*  */
+/*************/
+/* DONATION */
+/***********/
+
+.donation {
+  width: 121.6rem;
+  height: 55.4rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20.6rem;
+
+  margin: 0 auto;
+  padding: 0 0 8rem 0;
+}
+
+.donation-img-box {
+  width: 40.8rem;
+  height: 39.4rem;
+}
+
+.donation-img {
+  width: 100%;
+  height: auto;
+}
+
+.donation-text-btn-box {
+  width: 60.2rem;
+  height: 38.9rem;
+}
+
+.text-box {
+  width: 60.2rem;
+  height: 30rem;
+
+  margin-bottom: 4rem;
+}
+
+.donation-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 48px;
+
+  margin-bottom: 2.4rem;
+}
+
+.donation-description {
+  font-size: 2.4rem;
+  line-height: 36px;
+}
+
+/***********/
+/* FOOTER */
+/*********/
+
+.section-footer {
+  height: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--hero-background);
+}
+
+.footer-content {
+  width: 121.6rem;
+  height: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  height: auto;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+
+  list-style: none;
+}
+
+.footer-list li {
+  width: 4rem;
+  height: 4rem;
+
+  padding: 0.2rem 0.1rem;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--icon-background);
+}
