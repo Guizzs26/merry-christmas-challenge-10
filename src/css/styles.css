@@ -1,0 +1,37 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Variables */
+
+:root {
+  --brand-color: #cd3c32;
+
+  --dark: #121214;
+
+  --white: #ffffff;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--dark);
+}
+
+/*  */
