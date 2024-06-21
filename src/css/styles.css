@@ -5,6 +5,8 @@
 /* Variables */
 
 :root {
+  --hero-background: #ffe9e8;
+
   --brand-color: #cd3c32;
 
   --dark: #121214;
@@ -32,6 +34,109 @@ body {
   line-height: 1;
 
   color: var(--dark);
+}
+
+/* Reusable components and classes */
+
+.btn:link,
+.btn:visited {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  display: inline-block;
+
+  transition: transform 0.3s ease;
+
+  padding: 1.4rem 3.2rem;
+  border: none;
+  border-radius: 8px;
+
+  color: var(--white);
+  background-color: var(--brand-color);
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.1);
+}
+
+/*********/
+/* HERO */
+/*******/
+
+/* Hero layout */
+
+.section-hero {
+  padding: 10.45rem 0;
+
+  background-color: var(--hero-background);
+}
+
+.hero {
+  width: 121.6rem;
+  height: 35.1rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 12.6rem;
+
+  margin: 0 auto;
+}
+
+/* Hero content styles */
+
+/* text-btn-box */
+
+.hero-text-btn-box {
+  width: 59rem;
+  height: 35.1rem;
+}
+
+/* text-logo-box layout and styles */
+
+.text-logo-box {
+  width: 59rem;
+  height: 26.2rem;
+
+  margin-bottom: 4rem;
+}
+
+.hero-logo {
+  margin-bottom: 3.2rem;
+}
+
+.hero-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 48px;
+
+  margin-bottom: 2.4rem;
+}
+
+.hero-heading span {
+  color: var(--brand-color);
+}
+
+.hero-description {
+  font-size: 2.4rem;
+  line-height: 36px;
+}
+
+/* img-box layout and styles */
+
+.hero-img-box {
+  width: 50rem;
+  height: 33.9rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
 }
 
 /*  */
